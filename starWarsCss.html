@@ -1,0 +1,139 @@
+<style type="text/css">
+
+body{
+    background-color: black;
+
+}
+.opening{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00FFFF ;
+    /*border: 3px solid green;*/
+    -webkit-animation: linear infinite;
+    -webkit-animation-name:  fadeOut;
+    -webkit-animation-duration:  35s;
+
+}
+.bannerHolder{
+    font-size: 15em;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFF00 ;
+    border: 3px solid green;
+}
+
+.banner{
+    -webkit-animation: linear infinite;
+    -webkit-animation-name:  star;
+    -webkit-animation-duration:  35s;
+/*
+    -webkit-animation: star 10s ease-out infinite;*/
+}
+
+.holder{
+    border: 3px solid green;
+    margin: auto;
+    width: 900px;
+    height: 900px;
+    line-height: 60px;
+    text-align: center;
+    transform: perspective( 600px ) rotateX( 30deg ) translate(0em,50em);
+    background:black;
+    color: #FFFF00 ;
+    font-size: 150%
+
+
+}
+
+
+  .showbox {
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name:  crawl;
+    -webkit-animation-duration:  35s;
+
+    
+  }
+
+
+        @-webkit-keyframes crawl  {
+            100% {
+                 transform: translate(0em,-100em);
+            }
+        }
+
+         @-webkit-keyframes fadeOut {
+            10% {opacity: 1;}
+            12% {opacity: 0;}
+            100% {opacity: 0;}
+         }
+         
+         @keyframes fadeOut {
+            10% {opacity: 1;}
+            12% {opacity: 0;}
+            100% {opacity: 0;}
+         }
+         
+         .fadeOut {
+            -webkit-animation-name: fadeOut;
+            animation-name: fadeOut;
+         }
+
+        @keyframes star {
+          0% {
+            opacity: 0;
+            transform:scale(1.5) ;
+          }
+          13% {
+            opacity: 0;
+            transform: scale(1.5);
+          }
+          14% {
+            opacity: 1;
+            /*transform: scale(.002);*/
+            /*transform: translateZ(-1000em);*/
+          }
+         25% {
+            opacity: 0;
+            transform: scale(.002);
+            /*transform: translateZ(-1000em);*/
+          }
+          100% {
+            opacity: 0;
+            transform: scale(.002);
+            /*transform: translateZ(-1000em);*/
+          }
+        }
+
+</style>
+<div class = "opening">
+    <h1> A long time ago in a galaxy far, <br>far away.. </h1>
+</div>
+
+    <div class ="bannerHolder">
+        <div class ="banner">
+            <h2> STAR <br>
+                WASRS</h2>
+        </div>
+    </div>
+
+<div class= "holder">
+    <div class="showbox">
+    <h2>Episode V: THE EMPIRE STRIKES BACK</h2>
+    It is a dark time for the Rebellion. Although the Death Star has been destroyed, Imperial troops have driven the Rebel forces from their hidden base and pursued them across the galaxy.
+    Evading the dreaded Imperial Starfleet, a group of freedom fighters led by Luke Skywalker has established a new secret base on the remote ice world of Hoth.
+    The evil lord Darth Vader, obsessed with finding young Skywalker, has dispatched thousands of remote probes into the far reaches of space...."</div>
+</div>
